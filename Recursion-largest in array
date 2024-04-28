@@ -1,0 +1,11 @@
+def findMax(A,n):
+    if n==1:
+        return A[0]
+    else:
+        return max(A[n-1],findMax(A,n-1))
+
+
+A=[0,56,8,47,3,5]
+n=len(A)
+result=findMax(A,n)
+print(result)
